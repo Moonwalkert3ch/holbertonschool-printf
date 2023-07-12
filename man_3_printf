@@ -1,0 +1,44 @@
+.TH _PRINTF "July 09 2023" "_printf man page"
+.SH NAME
+_printf - print data and format
+.SH synopsis
+.B printf format [ARGUMENT]...
+.SH Description
+Prints argument based on format
+ Example:
+(Hello, %s, cohort 21);
+
+prints as:
+ Hello, cohort 21
+
+.B the conversion specifiers.
+
+.IP %c
+- prints character.
+.IP %s
+-prints string.
+.IP %%
+-prints percent sign.
+.IP %d
+-prints decimal.
+.IP %i
+- prints an integer.
+.IP %b
+- prints binary.
+.IP %p
+- prints pointer.
+.IP %o
+- prints octal
+.IP %r
+- prints a string in reverse.
+.IP %u
+- prints unsigned integer
+.IP %x
+- prints vexadecimal
+
+.SH SEE ALSO
+ printf(3)
+
+.SH Author
+Rachael Bradford 
+Supa
