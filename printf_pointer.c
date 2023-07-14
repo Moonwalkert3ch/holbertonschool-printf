@@ -24,12 +24,12 @@
    	temp /= 16;
    	}
 
-   	printed_chars += _putchar('0');
-  	printed_chars += _putchar('x');
+   	printed_chars += putchar('0');
+  	printed_chars += putchar('x');
 
    	if (count == 0)
    	{
-   	printed_chars += _putchar('0');
+   	printed_chars += putchar('0');
    	}
    	else
    	{
@@ -42,7 +42,7 @@
    	}
    	for (num = 0; num < digits; num++)
    	{
-   	printed_chars += _putchar(hex[num]);
+   	printed_chars += putchar(hex[num]);
    	}
    	}
    	return (printed_chars);

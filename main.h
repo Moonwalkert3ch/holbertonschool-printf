@@ -1,22 +1,32 @@
-#ifndef MAIN_H
-#define MAIN_H
+#ifndef _MAIN_H_
+#define _MAIN_H_
 
 #include <stdarg.h>
-#include <unistd.h>
+#include <stdlib.h>
 #include <stdio.h>
-#include <limits.h>
+#include <unistd.h>
 
+int _printf(const char *format, ...);
+int (*check_specifier(const char*))(va_list);
+
+/**
+ * struct func - struct for specifier
+ * @t: character to compare
+ * @f: function to handle print
+*/
+
+typedef struct func
+{
+	char *t;
+	int (*f)(va_list);
+} func_t;
+
+int print_char(va_list);
+int print_str(va_list args, int printed_chars);
+int print_percent(va_list);
 int printf_binary(unsigned int count, int printed_chars);
-int printf_hexa(unsigned int count, int printed_chars, int upper_chars);
-int printf_numbers(va_list args, int printed_nums);
-int printf_octa(unsigned int count, int printed_chars);
 int printf_pointer(va_list args, int printed_chars);
 int printf_reverse(va_list args, int printed_chars);
-int _putchar(char c);
-int selector(const char *format, va_list args, int printed_chars);
-int _printf(const char *format, ...);
-int printf_char(va_list args, int printed_chars);
-int printf_string(va_list args, int printed_chars);
 int printf_unsigned(unsigned int count, int printed_chars);
 
 #endif

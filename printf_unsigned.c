@@ -35,7 +35,7 @@ int printf_unsigned(unsigned int count, int printed_chars)
 		}
 		for (num = digits - 1; num >= 0; num--)
 		{
-			_putchar(unsigned_str[num]);
+			putchar(unsigned_str[num]);
 			printed_chars++;
 		}
 	}

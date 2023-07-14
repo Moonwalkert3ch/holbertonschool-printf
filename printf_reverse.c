@@ -19,7 +19,7 @@ int printf_reverse(va_list args, int printed_chars)
 
 	for (i = len - 1; i >= 0; i--)
 	{
-		_putchar(str[i]);
+		putchar(str[i]);
 		printed_chars++;
 	}
 

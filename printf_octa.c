@@ -22,14 +22,14 @@ int printf_octa(unsigned int count, int printed_chars)
 
 	if (i == 0)
 	{
-		_putchar('0');
+		putchar('0');
 		printed_chars++;
 	}
 	else
 	{
 		for (j = i - 1; j >= 0; j--)
 		{
-			_putchar(oct[j]);
+			putchar(oct[j]);
 			printed_chars++;
 		}
 	}
